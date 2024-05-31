@@ -2,9 +2,15 @@ import { StyleSheet } from "react-native";
 
 export const appStyles = StyleSheet.create({
     container: {
-      flex: 1,
       backgroundColor: '#F7F0E8',
-      alignItems: 'center',
-      justifyContent: 'center',
+      flex: 1,
     },
+    componentsContainer: {
+      marginTop: 25,
+      marginBottom: 25,
+      marginLeft: 10,
+      marginRight: 10,
+      display: 'flex',
+      flexDirection: 'column',
+    }
   });
