@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { View } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import { appStyles } from './styles/appStyles';
 import Banner from './components/banner/Banner.js';
 import Search from './components/search/Search.js';
@@ -12,9 +12,11 @@ export default function App() {
       <View style={appStyles.componentsContainer}>
         <StatusBar style="auto" />
         <Banner/>
-        <Search/>
-        <TaskCategories/>
-        <OngoingTasks/>
+        <ScrollView vertical showsVerticalScrollIndicator={false}>
+          <Search/>
+          <TaskCategories/>
+          <OngoingTasks/>
+        </ScrollView>
       </View>
     </View>
   );
