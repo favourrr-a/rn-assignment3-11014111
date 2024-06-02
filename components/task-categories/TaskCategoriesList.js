@@ -1,4 +1,4 @@
-import { ScrollView } from 'react-native';
+import { FlatList } from 'react-native';
 import TaskCategoryCard from './TaskCategoryCard';
 import studyImage from '../../assets/study-category.png';
 import workImage from '../../assets/work-category.png';
@@ -17,15 +17,15 @@ export default function TaskCategoriesList(){
         { id: 5, title: 'Hobbies', numberOfTasks: 8, photo: hobbiesImage },
     ];
     return(
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} style = {taskCategoriesListStyles.taskCategoryListContainer}>
-            {categories.map(category => (
+        <FlatList horizontal showsHorizontalScrollIndicator = {false} data = {categories} style = {taskCategoriesListStyles.taskCategoryListContainer}
+            keyExtractor={(item) => item.id.toString()}
+            renderItem={({ item }) => (
                 <TaskCategoryCard
-                    key={category.id}
-                    title={category.title}
-                    numberOfTasks={category.numberOfTasks}
-                    photo={category.photo}
+                    title={item.title}
+                    numberOfTasks={item.numberOfTasks}
+                    photo={item.photo}
                 />
-            ))}
-        </ScrollView>
+            )
+        }/>
     )
 }
