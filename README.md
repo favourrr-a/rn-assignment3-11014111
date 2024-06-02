@@ -20,7 +20,7 @@ Usage: ```import Banner from './components/banner/Banner'```
 #### SearchBox
 Description: A component containing a search bar with an icon.
 Usage: ```import SearchBox from './components/search/SearchBox'```
-Details: Uses TextInput for the search functionality.
+Details: Uses TextInput for the search functionality, and Button for filtering search results.
 
 #### TaskCategoriesList
 Description: A component that renders a horizontal list of task categories.
