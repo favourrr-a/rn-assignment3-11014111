@@ -1,13 +1,13 @@
-import { View, Image } from 'react-native';
+import { View, Image, Button } from 'react-native';
 import filterIcon from '../../assets/filter-icon.png';
 import { searchFilterButton } from '../../styles/searchStyles/searchFilterButtonStyles';
 
 export default function SearchFilterButton(){
     return(
         <View style = {searchFilterButton.searchFilterButtonContainer}>
-            <View style = {searchFilterButton.searchFilterButtonBackgroundRectangle}>
+            <Button style = {searchFilterButton.searchFilterButtonBackgroundRectangle}>
                 <Image source = {filterIcon}/>
-            </View>
+            </Button>
         </View>
     )
 }
