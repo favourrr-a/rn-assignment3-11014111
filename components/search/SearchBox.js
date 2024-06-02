@@ -1,4 +1,4 @@
-import { View, Image, Text } from 'react-native';
+import { View, Image, TextInput } from 'react-native';
 import searchIcon from '../../assets/search-icon.png';
 import { searchBoxStyles } from '../../styles/searchStyles/searchBoxStyles';
 
@@ -14,9 +14,7 @@ function IconAndSearch(){
     return(
         <View style = {searchBoxStyles.searchBoxIconAndSearchContainer}>
             <Image source = {searchIcon}/>
-            <Text style = {searchBoxStyles.searchBoxText}>
-                Search
-            </Text>
+            <TextInput  style = {searchBoxStyles.searchBoxText} placeholder = 'Search'/>
         </View>
 
     )
