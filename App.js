@@ -3,6 +3,7 @@ import { View } from 'react-native';
 import { appStyles } from './styles/appStyles';
 import Banner from './components/banner/Banner.js';
 import Search from './components/search/Search.js';
+import TaskCategories from './components/task-categories/TaskCategories.js';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <StatusBar style="auto" />
         <Banner/>
         <Search/>
+        <TaskCategories/>
       </View>
     </View>
   );
