@@ -4,6 +4,7 @@ import { appStyles } from './styles/appStyles';
 import Banner from './components/banner/Banner.js';
 import Search from './components/search/Search.js';
 import TaskCategories from './components/task-categories/TaskCategories.js';
+import OngoingTasks from './components/ongoing-tasks/OngoingTasks.js';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Banner/>
         <Search/>
         <TaskCategories/>
+        <OngoingTasks/>
       </View>
     </View>
   );
