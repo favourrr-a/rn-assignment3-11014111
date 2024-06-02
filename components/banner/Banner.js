@@ -1,10 +1,11 @@
-import {bannerStyles} from '../../styles/bannerStyles/bannerStyles.js'
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import BannerText from './BannerText.js';
+import { bannerStyles } from '../../styles/bannerStyles/bannerStyles.js';
 
 export default function Banner(){
     return(
-        <View style = {bannerStyles.banner_container}>
-            <Text> I am a banner </Text>
+        <View style = {bannerStyles.bannerContainer}>
+            <BannerText/>
         </View>
     )
 }
