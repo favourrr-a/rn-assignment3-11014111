@@ -1,5 +1,6 @@
 import { View, Text } from 'react-native';
 import { ongoingTasksStyles } from '../../styles/ongoingTasks/ongoingTasksStyles';
+import OngoingTasksList from './OngoingTasksList';
 
 export default function OngoingTasks(){
     return(
@@ -7,6 +8,7 @@ export default function OngoingTasks(){
             <Text style = {ongoingTasksStyles.ongoingTasksTitle}>
                 Ongoing Tasks
             </Text>
+            <OngoingTasksList/>
         </View>
     )
 }
